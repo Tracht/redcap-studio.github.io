@@ -243,6 +243,7 @@ a{color:inherit}
 
 /* responsive layout */
 @media(min-width:760px){
+  .only-mobile {display: none;}
   .two-col{flex-direction:row}
   .two-col .col-img,.two-col .col-text{flex:1}
   .hero .container{text-align:left}
