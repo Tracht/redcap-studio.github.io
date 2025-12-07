@@ -68,7 +68,7 @@ a{color:inherit}
   display:block;
   height:3px;
   width:24px;
-  background:white;
+  background:black;
   border-radius:2px;
   transition:var(--transition);
 }
