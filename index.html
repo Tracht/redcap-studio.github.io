@@ -1,27 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Home - Redcap Studio</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header, section { padding: 20px; }
-.hero { width: 100%; height: 250px; background: #ddd; }
-.services h2 { margin: 10px 0; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redcap Studio — Home</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Preload logo so it renders instantly -->
+  <link rel="preload" as="image" href="assets/images/logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-<header><h1>Home</h1></header>
-<div class="hero">Hero Image Placeholder</div>
 
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="logo-container"> <a class="logo-link" href="index.html">
+        <img src="assets/images/logo.png" alt="Redcap Studio" class="logo" width="40" height="40" loading="eager" decoding="async">
+      </a>
+      <p class="site-title">Redcap Studio</p>
+</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+<label for="nav-toggle" class="nav-toggle-label">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
 
-<section class="services">
-<h1>Tech solutions</h1>
-<h2>Rapid mobile app development for iOS and Android</h2>
-<h2>App store management and beta testing roll out</h2>
-<h2>App analytics & user insights support</h2>
-<h2>App lifecycle support</h2>
-</section>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section hero">
+      <div class="container">
+        <h1>Tech Solutions</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Rapid mobile app prototyping for iOS and Android</h2>
+            <div class="container two-col">
+        <div class="col col-img"><img src="assets/images/diagrams/app-prototyping.png" alt="Prototyping example"></div>
+        <div class="col col-text"><p>We build fast, interactive prototypes to validate ideas and accelerate development cycles.</p></div>
+      </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>App store management and beta testing roll out
+        </h2>
+      <div class="container two-col">
+        <div class="col col-img"><img src="assets/images/diagrams/app-management.png" alt="App store"></div>
+        <div class="col col-text"><p>We handle TestFlight, Play Store publishing, beta rollouts, and release automation so you can focus on product.</p></div>
+      </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>App analytics & user insights support</h2>
+      <div class="container two-col">
+        <div class="col col-img"><img src="assets/images/diagrams/app-analytics.png" alt="Analytics"></div>
+        <div class="col col-text"><p>Implement analytics & dashboards that surface product usage, retention, funnel, and event data.</p></div>
+      </div>
+      </div>
+    </section>
+
+    <!-- <section class="section">
+      <div class="container">
+      <h2>App lifecycle support</h2>
+      <div class="container two-col">
+        <div class="col col-img"><img src="assets/images/lifecycle.jpg" alt="Lifecycle"></div>
+        <div class="col col-text"><p>Continuous maintenance, updates, monitoring and feature rollouts to keep your app healthy and growing.</p></div>
+      </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Redcap Studio</p>
+    </div>
+  </footer>
+
 </body>
 </html>

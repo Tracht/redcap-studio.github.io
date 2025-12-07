@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About - Redcap Studio</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-.container { display: flex; flex-wrap: wrap; padding: 20px; }
-.col { flex: 1; padding: 10px; min-width: 250px; }
-b { display: block; margin-top: 10px; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redcap Studio — About</title>
+
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" as="image" href="assets/images/logo.png">
 </head>
 <body>
-<h1>Experience</h1>
-<div class="container">
-<div class="col">
-<p>Your description goes here.</p>
-</div>
-<div class="col">
-<b>About Redcap Studio</b>
-<span>established in 2024</span>
-<b>10+ years of expertise</b>
-<span>since 2014</span>
-</div>
-</div>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="logo-container"><a class="logo-link" href="index.html">
+        <img src="assets/images/logo.png" alt="Redcap Studio" class="logo" width="40" height="40" loading="eager" decoding="async">
+      </a>
+        <p class="site-title">Redcap Studio</p>
+        </div>
+              <input type="checkbox" id="nav-toggle" class="nav-toggle">
+<label for="nav-toggle" class="nav-toggle-label">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Experience</h1>
+
+        <div class="two-col">
+          <div class="col">
+            <p>Redcap Studio creates high-performance mobile applications combining rapid iteration with thoughtful product design. Having worked in startups for the past 10 years, we understand the nuances and what is important in app development in a startup context.</p>
+            <p>We focus on rapid iterations, performance, and high-grade user experience.</p>
+          </div>
+
+          <div class="col">
+            <p><strong>About Redcap Studio</strong><br>established in 2024</p>
+            <p><strong>10+ years of expertise</strong><br>since 2014</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Redcap Studio — <a href="mailto:info@redcapstudio.com">info@redcapstudio.com</a></p>
+    </div>
+  </footer>
+
 </body>
 </html>
