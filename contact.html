@@ -14,7 +14,7 @@
   <header class="site-header">
     <div class="header-inner container">
        <div class="logo-container"><a class="logo-link" href="index.html">
-        <img src="assets/images/logo.png" alt="Redcap Studio" class="logo" width="40" height="40" loading="eager" decoding="async">
+        <img src="assets/images/logo.png" alt="Redcap Studio logo" class="logo" width="40" height="40" loading="eager" decoding="async">
       </a>
       <p class="site-title">Redcap Studio</p></div>
 
@@ -46,13 +46,13 @@
           </label>
 
           <label>
-            <span class="label-text">Your Email (required)</span>
-            <input type="email" name="email" placeholder="yourname@example.com" required>
+            <span class="label-text">*Your Email</span>
+            <input alt="email required" type="email" name="email" placeholder="yourname@example.com" required>
           </label>
 
           <label>
-            <span class="label-text">Message (required)</span>
-            <textarea name="message" id="message" rows="6" placeholder="Tell us about your project" required></textarea>
+            <span class="label-text">*Message</span>
+            <textarea alt="message required" name="message" id="message" rows="6" placeholder="Tell us about your project" required></textarea>
           </label>
 
           <!-- Honeypot -->
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cooldown = checkCooldown();
     if (cooldown > 0) {
-      showStatus(`Too many submissions. Try again in ${Math.ceil(cooldown / 1000)}s.`, "cooldown");
+      showStatus("Too many submissions.", "cooldown");
       return;
     }
 
